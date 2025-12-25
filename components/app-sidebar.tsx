@@ -1,6 +1,7 @@
 "use client";
 
 import {
+  BuildingIcon,
   CompassIcon,
   FolderIcon,
   LayoutGridIcon,
@@ -42,6 +43,12 @@ export function AppSidebar({ workflowCount = 0 }: AppSidebarProps) {
       url: "/explore",
       icon: CompassIcon,
       isActive: pathname === "/explore",
+    },
+    {
+      title: "Organizations",
+      url: "/orgs",
+      icon: BuildingIcon,
+      isActive: pathname.startsWith("/orgs"),
     },
   ];
 
